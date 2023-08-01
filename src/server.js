@@ -17,7 +17,7 @@ mongoose.connect("mongodb+srv://krishnapal1234:kk1234@cluster0.mhnx7cz.mongodb.n
     app.use("/notes",noteRouter);
 });
 
-
-app.listen(5000,function(){
-    console.log("Server Started ar Port:5000")
+const PORT = process.env.PORT || 5000;
+app.listen(PORT,function(){
+    console.log("Server Started ar Port:" + PORT)
 });
